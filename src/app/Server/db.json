@@ -1,0 +1,51 @@
+{
+    "Doctors":[
+        {   "id":1,
+            "name":"Dr.Sophie",
+            "img":"Doctorimg1.png",
+            "specialization":"Gynaecologist",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        },
+        {   "id":2,
+            "name":"Dr.Liam",
+            "img":"Doctorimg2.png",
+            "specialization":"Dentist",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        },
+        {   "id":3,
+            "name":"Dr.Noah",
+            "img":"Doctorimg3.png",
+            "specialization":"Nursing",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        },
+        {   "id":4,
+            "name":"Dr.Jess",
+            "img":"Doctorimg4.png",
+            "specialization":"Cardiologist",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        },
+        {   "id":5,
+            "name":"Dr.John",
+            "img":"Doctorimg5.png",
+            "specialization":"Orthopedic",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        },
+        {   "id":6,
+            "name":"Dr.Prathik",
+            "img":"Doctorimg6.png",
+            "specialization":"Dermatologist",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        },
+        {   "id":7,
+            "name":"Dr.Jane",
+            "img":"Doctor7.png",
+            "specialization":"Pediatrician",
+            "address":"795 Folson Ave 600 San Franscisco,CADGE"
+        }
+    ],
+    "Appointments":[
+        {
+            
+        }
+    ]
+}

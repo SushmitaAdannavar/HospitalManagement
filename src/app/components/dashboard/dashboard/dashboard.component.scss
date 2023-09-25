@@ -1,0 +1,76 @@
+.maindiv {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    right: 10px;
+}
+
+.searchdiv {
+    width: 500px;
+    height: 50px;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.search {
+    width: 501px;
+    border-radius: 10px;
+    z-index: 1;
+    margin-left: -2px;
+    margin-top: -2px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+}
+
+.dochead {
+    font-size: xx-large;
+    color: gray;
+}
+
+.maindoc{
+    position: relative;
+    top:10px;left: 5px;right: 55px;
+        display: flex;justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    margin-left: 5px;margin-right: 5px;
+    
+
+}
+
+.doclists{
+        width: 430px;
+        height: 430px;
+        border: 1px ;margin-top: 30px;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+        align-content: center;overflow: hidden;
+        padding: 20px;
+        display: flex;flex-direction: column;
+}
+
+.imgdiv{
+    margin: 0;padding: 0;position: relative;top:-22px;left: -25px;
+}
+
+.img{
+    height: 240px;width: 500px;margin: 0;padding: 0;object-fit: fill;
+}
+.contentdiv{
+    text-align: center;
+    
+}
+
+.docname{
+    font-size: x-large;
+}
+
+.icons{
+    height: 23px;
+    width:23px;
+    width:25px;
+}
