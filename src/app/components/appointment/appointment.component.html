@@ -1,50 +1,50 @@
-<div class="maindiv">
+<div [formGroup]="appointmentForm" class="maindiv" >
     <h1>Add appointment</h1>
     <button mat-raised-button color="primary">Select image</button>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Name">
+            <input matInput placeholder="Name" formControlName="name">
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Doctor">
+            <input matInput placeholder="Doctor" formControlName="doctor">
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Email">
+            <input matInput placeholder="Email" formControlName="email">
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Date">
+            <input matInput placeholder="Date" formControlName="date">
         </mat-form-field>
     </div>
     <div class="fromtodiv">
         <div class="formfieldsdiv formfieldsdivsub">
             <mat-form-field appearance="fill" class="formfields formfieldssub">
-                <input matInput placeholder="From">
+                <input matInput placeholder="From" formControlName="fromtime">
             </mat-form-field>
         </div>
         <div class="formfieldsdiv formfieldsdivsub">
             <mat-form-field appearance="fill" class="formfields formfieldssub">
-                <input matInput placeholder="To">
+                <input matInput placeholder="To" formControlName="totime">
             </mat-form-field>
         </div>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Number">
+            <input matInput placeholder="Number" formControlName="number">
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Injury">
+            <input matInput placeholder="Injury" formControlName="injury">
         </mat-form-field>
     </div>
     <div class="buttondiv">
         <button mat-raised-button color="warn">Cancel</button>
-        <button mat-raised-button color="primary" style="width: 200px;">Add appointment</button>
+        <button mat-raised-button color="primary" (click)="addappointment()" style="width: 200px;">Add appointment</button>
     </div>
 </div>

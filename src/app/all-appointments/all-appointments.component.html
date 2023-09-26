@@ -1,0 +1,38 @@
+<div class="maindiv">
+    <div class="searchdiv">
+        <mat-form-field class="search" appearance="fill">
+            <input matInput placeholder="Type to search" (keyup)="searchfunc($event)">
+            <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+    </div>
+    <div class="dochead">
+        Appointments
+    </div>
+    <div class="maindoc">
+        <table class="tableentry">
+            <tr class="tableheader">
+                <th class="head1">Photo</th>
+                <th class="head1">Name</th>
+                <th class="head2"> Email </th>
+                <th class="head3">Date</th>
+                <th class="head3">Visit time</th>
+                <th class="head2">Number</th>
+                <th class="head3">Doctor</th>
+                <th class="head2">InjuryCondition</th>
+                <th class="head2">Actions</th>
+            </tr>
+
+            <tr class="tableheader tableheader1" *ngFor="let list of appointments | searchfilter:search">
+                <th class="head1"></th>
+                <th class="head1">{{list.name}}</th>
+                <th class="head2" style="color: blue;font-weight: 300;"> {{list.email}} </th>
+                <th class="head3" style="color: grey;font-weight: 300;">{{list.date}}</th>
+                <th class="head3" style="color: grey;font-weight: 300;">{{list.fromtime}}-{{list.totime}}</th>
+                <th class="head2" style="color: blue;font-weight: 300;">{{list.number}}</th>
+                <th class="head3" style="color: grey;font-weight: 300;">{{list.doctor}}</th>
+                <th class="head2" style="color: grey;font-weight: 300;">{{list.injury}}</th>
+                <th class="head2">Actions</th>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -1,51 +1,88 @@
 {
-    "Doctors":[
-        {   "id":1,
-            "name":"Dr.Sophie",
-            "img":"Doctorimg1.png",
-            "specialization":"Gynaecologist",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        },
-        {   "id":2,
-            "name":"Dr.Liam",
-            "img":"Doctorimg2.png",
-            "specialization":"Dentist",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        },
-        {   "id":3,
-            "name":"Dr.Noah",
-            "img":"Doctorimg3.png",
-            "specialization":"Nursing",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        },
-        {   "id":4,
-            "name":"Dr.Jess",
-            "img":"Doctorimg4.png",
-            "specialization":"Cardiologist",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        },
-        {   "id":5,
-            "name":"Dr.John",
-            "img":"Doctorimg5.png",
-            "specialization":"Orthopedic",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        },
-        {   "id":6,
-            "name":"Dr.Prathik",
-            "img":"Doctorimg6.png",
-            "specialization":"Dermatologist",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        },
-        {   "id":7,
-            "name":"Dr.Jane",
-            "img":"Doctor7.png",
-            "specialization":"Pediatrician",
-            "address":"795 Folson Ave 600 San Franscisco,CADGE"
-        }
-    ],
-    "Appointments":[
-        {
-            
-        }
-    ]
+  "Doctors": [
+    {
+      "id": 1,
+      "name": "Dr.Sophie",
+      "img": "Doctorimg1.png",
+      "specialization": "Gynaecologist",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    },
+    {
+      "id": 2,
+      "name": "Dr.Liam",
+      "img": "Doctorimg2.png",
+      "specialization": "Dentist",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    },
+    {
+      "id": 3,
+      "name": "Dr.Noah",
+      "img": "Doctorimg3.png",
+      "specialization": "Nursing",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    },
+    {
+      "id": 4,
+      "name": "Dr.Jess",
+      "img": "Doctorimg4.png",
+      "specialization": "Cardiologist",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    },
+    {
+      "id": 5,
+      "name": "Dr.John",
+      "img": "Doctorimg5.png",
+      "specialization": "Orthopedic",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    },
+    {
+      "id": 6,
+      "name": "Dr.Prathik",
+      "img": "Doctorimg6.png",
+      "specialization": "Dermatologist",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    },
+    {
+      "id": 7,
+      "name": "Dr.Jane",
+      "img": "Doctor7.png",
+      "specialization": "Pediatrician",
+      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+    }
+  ],
+  "Appointments": [
+    {
+      "name": "Liam",
+      "doctor": "Dr.Noah",
+      "email": "liam@gmail.com",
+      "date": "25 Sept 2023",
+      "fromtime": "10:30",
+      "totime": "10:45",
+      "number": "9012345678",
+      "injury": "Allergy",
+      "id": 1
+    },
+    {
+      "name": "Emma",
+      "doctor": "Dr.Liam",
+      "email": "emma@gmail.com",
+      "date": "26 Sept 2023",
+      "fromtime": "11:00",
+      "totime": "11.30",
+      "number": "9876054312",
+      "injury": "flu",
+      "id": 2
+    },
+    {
+      "name": "Sophie",
+      "doctor": "Dr.Liam",
+      "email": "sophie@gmail.com",
+      "date": "28 Sept 2023",
+      "fromtime": "11:10",
+      "totime": "11:40",
+      "number": "9900887766",
+      "injury": "flu",
+      "id": 3
+    }
+  ]
 }

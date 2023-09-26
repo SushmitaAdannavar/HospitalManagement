@@ -5,6 +5,8 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatTableModule} from '@angular/material/table';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +16,8 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
+import { AllAppointmentsComponent } from './all-appointments/all-appointments.component';
+import { SearchfilterPipe } from './pipe/searchfilter.pipe';
 
 @NgModule({
   declarations: [
@@ -21,10 +25,12 @@ import { AppointmentComponent } from './components/appointment/appointment.compo
     SignupComponent,
     LoginComponent,
     DashboardComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    AllAppointmentsComponent,
+    SearchfilterPipe
   ],
   imports: [
-    BrowserModule,HttpClientModule,MatIconModule,
+    BrowserModule,HttpClientModule,MatIconModule,ReactiveFormsModule,MatTableModule,
     AppRoutingModule,MatFormFieldModule,MatInputModule,MatSlideToggleModule,
     BrowserAnimationsModule,MatButtonModule
   ],

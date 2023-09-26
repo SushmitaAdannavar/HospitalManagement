@@ -7,9 +7,13 @@ import { Injectable } from '@angular/core';
 export class HttpService {
 
   constructor(private http:HttpClient) { }
+  baseurl='http://localhost:3000/'
+  GetService(url:string){
+    return this.http.get(this.baseurl+url);
+  }
 
-  GetService(){
-    return this.http.get('http://localhost:3000/Doctors')
+  PostService(url:string,reqdata:any){
+    return this.http.post(this.baseurl+url,reqdata)
   }
 
 }
