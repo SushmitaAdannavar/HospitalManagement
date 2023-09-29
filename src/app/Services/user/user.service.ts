@@ -11,11 +11,32 @@ export class UserService {
   getdoctorsList(){
     return this.http.GetService('Doctors');
   }
+
   postappointment(reqdata:any)
   {
   return this.http.PostService('Appointments',reqdata);
   }
   getappointment(){
     return this.http.GetService('Appointments');
+  }
+  editappointment(reqdata:any,id:any){
+    return this.http.PutService('Appointments/'+id,reqdata)
+  }
+  deleteappointment(id:any){
+    return this.http.DeleteService('Appointments/'+id)
+  }
+
+  postpatient(reqdata:any)
+  {
+  return this.http.PostService('Patients',reqdata);
+  }
+  getpatientsList(){
+    return this.http.GetService('Patients');
+  }
+  editpatient(reqdata:any,id:any){
+    return this.http.PutService('Patients/'+id,reqdata)
+  }
+  deletepatient(id:any){
+    return this.http.DeleteService('Patients/'+id)
   }
 }

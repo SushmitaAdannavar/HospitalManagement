@@ -7,6 +7,12 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import {MatTableModule} from '@angular/material/table';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule,MatDrawerMode} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatBadgeModule} from '@angular/material/badge';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,8 +22,12 @@ import { LoginComponent } from './components/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 import { AppointmentComponent } from './components/appointment/appointment.component';
-import { AllAppointmentsComponent } from './all-appointments/all-appointments.component';
+import { AllAppointmentsComponent } from './components/all-appointments/all-appointments.component';
 import { SearchfilterPipe } from './pipe/searchfilter.pipe';
+import { DoctorsComponent } from './components/doctors/doctors.component';
+import { PatientsComponent } from './components/patients/patients.component';
+import { AddpatientComponent } from './components/addpatient/addpatient.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +37,15 @@ import { SearchfilterPipe } from './pipe/searchfilter.pipe';
     DashboardComponent,
     AppointmentComponent,
     AllAppointmentsComponent,
-    SearchfilterPipe
+    SearchfilterPipe,
+    DoctorsComponent,
+    PatientsComponent,
+    AddpatientComponent
   ],
   imports: [
-    BrowserModule,HttpClientModule,MatIconModule,ReactiveFormsModule,MatTableModule,
-    AppRoutingModule,MatFormFieldModule,MatInputModule,MatSlideToggleModule,
-    BrowserAnimationsModule,MatButtonModule
+    BrowserModule,HttpClientModule,MatIconModule,ReactiveFormsModule,MatTableModule,MatListModule,FormsModule,
+    AppRoutingModule,MatFormFieldModule,MatInputModule,MatSlideToggleModule,MatToolbarModule,MatBadgeModule,
+    BrowserAnimationsModule,MatButtonModule,MatMenuModule,MatSidenavModule,MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

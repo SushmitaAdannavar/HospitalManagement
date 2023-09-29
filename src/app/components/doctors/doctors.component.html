@@ -1,0 +1,20 @@
+
+<div class="dochead">
+    Doctors
+</div>
+<div class="maindoc">
+    <div *ngFor="let list of Doctors" class="doclists">
+        <div class="imgdiv">
+            <img src="../../../../assets/{{list.img}}" class="img">
+        </div>
+        <div class="contentdiv">
+            <h3 class="docname">{{list.name}}</h3>
+            <p style="color: gray;margin-top: -5px;">{{list.specialization}}</p>
+            <img src="../../../../assets/1161953_instagram_icon.svg" class="icons">
+            <img src="../../../../assets/facebook-f.svg" class="icons" >
+            <img src="../../../../assets/twitter.svg" class="icons">
+            <p style="color: gray;margin-top: 10px;">{{list.address}}</p>
+            <button mat-raised-button color="primary">View Profile</button>
+        </div>
+    </div>
+</div>

@@ -16,4 +16,11 @@ export class HttpService {
     return this.http.post(this.baseurl+url,reqdata)
   }
 
+  PutService(url:string,reqdata:any){
+    return this.http.put(this.baseurl+url,reqdata);
+  }
+
+  DeleteService(url:string){
+    return this.http.delete(this.baseurl+url);
+  }
 }

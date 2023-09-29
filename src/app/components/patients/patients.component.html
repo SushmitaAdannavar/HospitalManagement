@@ -1,0 +1,48 @@
+<div class="maindiv">
+    <div class="header">
+        <div class="dochead">
+            Patients
+        </div>
+        <div><button mat-raised-button color="primary" (click)="addpatients()">+ Add patient</button></div>
+    </div>
+    <div class="maindoc">
+        <table class="tableentry">
+            <tr class="tableheader">
+                <th class="head1">Photo</th>
+                <th class="head1">Name</th>
+                <th class="head1"> ID </th>
+                <th class="head1">Age</th>
+                <th style="width: 250px;">Address</th>
+                <th class="head2">Number</th>
+                <th class="head2">Last visit</th>
+                <th class="head2">Status</th>
+                <th style="width: 200px;">Actions</th>
+            </tr>
+
+            <tr class="tableheader1" *ngFor="let list of patients | searchfilter:search">
+                <th class="head1"><img src="../../../../assets/{{list.img}}" height="33px" width="33px"
+                        style="border:1px groove;border-radius: 50%;"></th>
+                <th class="head1">{{list.name}}</th>
+                <th class="head1" style="font-weight: 300;"> {{list.ID}} </th>
+                <th class="head1" style="color: grey;font-weight: 300;">{{list.age}}</th>
+                <th style="color: grey;font-weight: 300;width:250px;">{{list.address}}</th>
+                <th class="head2" style="color: blue;font-weight: 300;">{{list.number}}</th>
+                <th class="head2" style="color: grey;font-weight: 300;">{{list.lastvisit}}</th>
+                <th class="head2" style="color: grey;font-weight: 300;"><button mat-raised-button
+                        color="primary">{{list.status}}</button></th>
+                <th class="buttonflex">
+                    <div
+                        style="border-radius: 50%;height: 40px;width: 40px;background-color: rgb(51,108,251);margin-top: 6px;margin-left: 20px;color: white;">
+                        <img src="../../assets/edit_FILL0_wght300_GRAD0_opsz24.svg" style="margin-top: 6px;"
+                            (click)="editpatient(list)">
+                    </div>
+                    <div
+                        style="border-radius: 70%;height: 40px;width: 40px;background-color: rgb(237,79,95);margin-top: 6px;margin-left: -80px;">
+                        <img src="../../assets/delete_FILL0_wght300_GRAD0_opsz24.svg" style="margin-top: 6px;"
+                            (click)="deletepatient(list.id)">
+                    </div>
+                </th>
+            </tr>
+        </table>
+    </div>
+</div>

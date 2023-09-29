@@ -52,17 +52,19 @@
   ],
   "Appointments": [
     {
+      "img": "Doctor7.png",
       "name": "Liam",
-      "doctor": "Dr.Noah",
+      "doctor": "Dr.William",
       "email": "liam@gmail.com",
-      "date": "25 Sept 2023",
+      "date": "30 Sept 2023",
       "fromtime": "10:30",
-      "totime": "10:45",
-      "number": "9012345678",
+      "totime": "11:00",
+      "number": "9876512341",
       "injury": "Allergy",
       "id": 1
     },
     {
+      "img": "profileimg.png",
       "name": "Emma",
       "doctor": "Dr.Liam",
       "email": "emma@gmail.com",
@@ -74,14 +76,74 @@
       "id": 2
     },
     {
-      "name": "Sophie",
-      "doctor": "Dr.Liam",
-      "email": "sophie@gmail.com",
-      "date": "28 Sept 2023",
-      "fromtime": "11:10",
-      "totime": "11:40",
-      "number": "9900887766",
-      "injury": "flu",
+      "img": "Doctorimg4.png",
+      "name": "Avia",
+      "doctor": "Dr.Emma",
+      "email": "avia@gmail.com",
+      "date": "2 Oct 2023",
+      "fromtime": "2:00",
+      "totime": "2:30",
+      "number": "9999987654",
+      "injury": "diaorrhea",
+      "id": 4
+    },
+    {
+      "img": "profileimg2.png",
+      "name": "William",
+      "doctor": "Dr.Jess",
+      "email": "william@gmail.com",
+      "date": "2 Oct 2023",
+      "fromtime": "10:00",
+      "totime": "10:30",
+      "number": "9976544661",
+      "injury": "sunburn",
+      "id": 5
+    },
+    {
+      "img": "profileimg.png",
+      "name": "Shrithi",
+      "doctor": "Dr.Emma",
+      "email": "shrithi@gmail.com",
+      "date": "30 Sept 2023",
+      "fromtime": "10:30",
+      "totime": "11:00",
+      "number": "9988776644",
+      "injury": "Fracture",
+      "id": 6
+    }
+  ],
+  "Patients": [
+    {
+      "id": 1,
+      "ID": 10021,
+      "img": "profileimg.png",
+      "name": "Isabella",
+      "age": "35",
+      "address": "94 Pilgrim Avenue,MD 20043",
+      "number": "9876543211",
+      "lastvisit": "18 Dec 2023",
+      "status": "Approved"
+    },
+    {
+      "img": "profileimg2.png",
+      "name": "Avia",
+      "ID": 10022,
+      "age": "32",
+      "address": "46 Pilgrim Avenue,Chevy chase, MD 20086",
+      "number": "9988776650",
+      "lastvisit": "21 Aug 2023",
+      "status": "Approved",
+      "id": 2
+    },
+    {
+      "img": "Doctorimg2.png",
+      "name": "Sophia",
+      "ID": "10023",
+      "age": "33",
+      "address": "46 Pilgrim Avenue,Chevy chase, MD 20086",
+      "number": "9878907756",
+      "lastvisit": "10 Aug 2023",
+      "status": "Pending",
       "id": 3
     }
   ]

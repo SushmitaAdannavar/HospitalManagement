@@ -1,11 +1,35 @@
-<div class="maindiv">
-    <div class="searchdiv">
-        <mat-form-field class="search" appearance="fill">
-            <input matInput placeholder="Type to search">
-            <mat-icon matSuffix>search</mat-icon>
-        </mat-form-field>
+<div>
+    <div class="maindiv">
+        <div class="searchdiv">
+            <mat-form-field class="search" appearance="fill">
+                <input matInput placeholder="Type to search">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="profile">
+            <mat-icon matBadge="5" matBadgeColor="warn" matBadgeSize="small" class="notification">
+                notifications
+            </mat-icon>
+            <img src="../../../../assets/profileimg.png" height="40px" width="40px" class="profileimg">
+            <img src="../../../../assets/downarrow.svg" [matMenuTriggerFor]="menu" class="arrowdown">
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="./doctors">
+                    <span>Doctors</span>
+                </button>
+                <button mat-menu-item routerLink="./allAppointments">
+                    <span>Appointments</span>
+                </button>
+                <button mat-menu-item routerLink="./allPatients">
+                    <span>Patients</span>
+                </button>
+            </mat-menu>
+        </div>
     </div>
-    <div class="dochead">
+    <div style="position: relative;top: 80px;">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<!-- <div class="dochead">
         Doctors
     </div>
     <div class="maindoc">
@@ -24,6 +48,51 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-    
+<!-- <div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-toolbar class="example-toolbar">
+        <div>
+            <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+        </div>
+        <div class="searchdiv">
+            <mat-form-field class="search" appearance="fill">
+                <input matInput placeholder="Type to search">
+                <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+        </div>
+        <div style="width: 730px;display: flex;justify-content: space-between;">
+
+        </div>
+    </mat-toolbar>
+    <mat-divider style="margin-top: 8px;"> </mat-divider>
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+            fixedTopGap="56">
+            <mat-nav-list>
+                <br>
+                <a mat-list-item routerLink="./doctors" class="sidebar" routerLinkActive="active">
+                    <div class="sidebar1"> -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" style="margin-left: 11px;">
+                            <path
+                                d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6A4.997 4.997 0 0 1 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z">
+                            </path>
+                        </svg> -->
+<!-- <p style="margin-top: 13px;width: 170px;">Doctors </p>
+                    </div>
+                </a>
+                <a mat-list-item routerLink="./allAppointments" class="sidebar" routerLinkActive="active">
+                    <div class="sidebar1"> -->
+<!-- <img src="../../../../assets/add_alert.svg" height="25px"
+                            style="margin-left: 10px;"> -->
+<!-- <p style="margin-top: 13px;width: 170px;">Appointments</p>
+                    </div>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div> -->

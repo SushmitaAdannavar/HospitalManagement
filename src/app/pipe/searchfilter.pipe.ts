@@ -9,12 +9,10 @@ export class SearchfilterPipe implements PipeTransform {
     if (search==='') {
       return data;
     }
-    const users = [];
-    for (const user of data) {
-    if(user['name']===search){
-      users.push(user);
-    }
-    }
+    const users = data.filter((value)=>{
+      return value.name.includes(search);
+    })
+    
     return users;
     
   }
