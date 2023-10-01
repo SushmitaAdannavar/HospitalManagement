@@ -20,6 +20,9 @@ export class PatientsComponent {
         console.log()
         this.patients=res;
       })
+      this.userService.searchval.subscribe((val)=>{
+        this.search=val;
+       })
     }
   
     searchfunc(event:any){

@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SearchfilterPipe implements PipeTransform {
 
   transform(data: Array<any>, search: string) {
+    
     if (search==='') {
       return data;
     }

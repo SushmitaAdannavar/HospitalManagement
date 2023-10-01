@@ -17,7 +17,7 @@ const routes: Routes = [
   children:[{path:'doctors',component:DoctorsComponent},
   {path:'allAppointments',component:AllAppointmentsComponent},
   {path:'allPatients',component:PatientsComponent}],
-   canActivate:[AuthenticationGuard]},
+   canActivate:[AuthenticationGuard]}
   
 ];
 

@@ -18,10 +18,10 @@ export class DoctorsComponent implements OnInit{
     console.log(res,'res')
     this.Doctors=res;
    })
+   this.userService.searchval.subscribe((val)=>{
+    this.search=val;
+   })
   }
 
-  searchfunc(event:any){
-    this.ngOnInit();
-  this.search=event.target.value;
-  }
+  
 }

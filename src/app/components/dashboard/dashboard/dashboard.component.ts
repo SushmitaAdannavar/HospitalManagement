@@ -9,7 +9,7 @@ import { UserService } from 'src/app/Services/user/user.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit{
-  Doctors:any;
+  Doctors:any;searchval!:string
  
   constructor( private userService:UserService,private router:Router,private authservice:AuthguardServiceService){}
     
@@ -26,4 +26,9 @@ export class DashboardComponent implements OnInit{
     this.router.navigateByUrl('login');
   }
 
+  search(e:any){
+    this.searchval=e.target.value;
+    console.log(this.searchval)
+    this.userService.changeMessage(this.searchval)
+  }
 }

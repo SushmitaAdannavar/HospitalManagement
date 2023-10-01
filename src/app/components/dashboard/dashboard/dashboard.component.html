@@ -2,7 +2,7 @@
     <div class="maindiv">
         <div class="searchdiv">
             <mat-form-field class="search" appearance="fill">
-                <input matInput placeholder="Type to search">
+                <input matInput placeholder="Type to search" (keyup)="search($event)">
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
         </div>
@@ -18,9 +18,9 @@
             </mat-menu>
             <img src="../../../../assets/downarrow.svg" [matMenuTriggerFor]="menu" class="arrowdown">
             <mat-menu #menu="matMenu">
-                <button mat-menu-item routerLink="./doctors">
+                <button mat-menu-item routerLink="./doctors" >
                     <span>Doctors</span>
-                </button>
+                </button> 
                 <button mat-menu-item routerLink="./allAppointments">
                     <span>Appointments</span>
                 </button>

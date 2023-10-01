@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpService } from '../http/http.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -38,5 +39,13 @@ export class UserService {
   }
   deletepatient(id:any){
     return this.http.DeleteService('Patients/'+id)
+  }
+
+  private messageSource=new BehaviorSubject("")
+  searchval=this.messageSource.asObservable();
+
+
+  changeMessage(message:any){
+    this.messageSource.next(message);
   }
 }

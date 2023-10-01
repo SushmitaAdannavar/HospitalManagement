@@ -21,6 +21,9 @@ search:string='';
       console.log()
       this.appointments=res;
     })
+    this.userService.searchval.subscribe((val)=>{
+      this.search=val;
+     })
   }
 
   searchfunc(event:any){
