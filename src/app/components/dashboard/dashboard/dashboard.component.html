@@ -10,7 +10,12 @@
             <mat-icon matBadge="5" matBadgeColor="warn" matBadgeSize="small" class="notification">
                 notifications
             </mat-icon>
-            <img src="../../../../assets/profileimg.png" height="40px" width="40px" class="profileimg">
+            <img src="../../../../assets/profileimg.png" [matMenuTriggerFor]="menulogout" height="40px" width="40px" class="profileimg">
+            <mat-menu #menulogout="matMenu">
+                <button mat-menu-item (click)="logout()">
+                    <span>Log out</span>
+                </button>
+            </mat-menu>
             <img src="../../../../assets/downarrow.svg" [matMenuTriggerFor]="menu" class="arrowdown">
             <mat-menu #menu="matMenu">
                 <button mat-menu-item routerLink="./doctors">

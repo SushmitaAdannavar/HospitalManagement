@@ -28,6 +28,8 @@ import { DoctorsComponent } from './components/doctors/doctors.component';
 import { PatientsComponent } from './components/patients/patients.component';
 import { AddpatientComponent } from './components/addpatient/addpatient.component';
 import { FormsModule } from '@angular/forms';
+import { AuthguardServiceService } from './Services/Authguard/authguard-service.service';
+import { AuthenticationGuard } from './authentication.guard';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,MatFormFieldModule,MatInputModule,MatSlideToggleModule,MatToolbarModule,MatBadgeModule,
     BrowserAnimationsModule,MatButtonModule,MatMenuModule,MatSidenavModule,MatDialogModule
   ],
-  providers: [],
+  providers: [AuthenticationGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

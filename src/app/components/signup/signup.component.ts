@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { SigninService } from 'src/app/Services/signin.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,5 +10,30 @@ import { Component } from '@angular/core';
 })
 export class SignupComponent {
 
+  signupform!:FormGroup
+
+  constructor(private formBuilder:FormBuilder,private signin:SigninService,private router:Router){
+
+  }
+
+  ngOnInit(){
+    this.signupform=this.formBuilder.group({
+      "name":['',Validators.required],
+      "email":['',[Validators.required,Validators.email]],
+      "password":['',[Validators.required,Validators.minLength(6)]]
+    })
+  }
+
+  register(){
+    let reqdata={
+      "name":this.signupform.value.name,
+      "email":this.signupform.value.email,
+      "password":this.signupform.value.password
+    }
+    this.signin.signup(reqdata).subscribe(val=>{
+      console.log(val);
+      this.router.navigate(['/login']);
+    })
+  }
   
 }

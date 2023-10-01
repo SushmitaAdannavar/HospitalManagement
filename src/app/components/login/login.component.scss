@@ -48,3 +48,16 @@
     position: relative;
     top:82px;left:5px;
 }
+
+@media only screen and (max-width: 412px) {
+
+    .maindiv {
+
+        position: relative;
+        top: 170px;
+        left: 50px;
+        width: 400px;
+    }
+
+
+}

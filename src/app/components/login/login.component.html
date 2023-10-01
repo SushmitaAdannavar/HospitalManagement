@@ -1,21 +1,23 @@
-<div class="maindiv">
+<div class="maindiv" [formGroup]="loginForm">
     <p class="signup">Login Form</p>
     <p style="color:grey">Login to access your account</p>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Email Address">
+            <input matInput placeholder="Email Address" formControlName="email">
+            <mat-error>Enter username</mat-error>
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
-        <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Password">
+        <mat-form-field appearance="fill" class="formfields" >
+            <input matInput placeholder="Password" formControlName="password">
+            <mat-error>Enter password</mat-error>
         </mat-form-field>
     </div>
     <div class="slidetoggle">
         <mat-slide-toggle color="primary">Remember me</mat-slide-toggle>
     </div>
     <div>
-        <button mat-raised-button color="primary" class="button">
+        <button mat-raised-button color="primary" class="button" (click)="login()">
             <div class="buttondiv">
                 <div style="font-size: x-large;width: 20px;">+ </div>
                 <div >Login</div>

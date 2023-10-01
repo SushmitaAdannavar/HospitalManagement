@@ -1,6 +1,6 @@
-
-import {MediaMatcher} from '@angular/cdk/layout';
-import {ChangeDetectorRef, Component, OnDestroy,OnInit} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthguardServiceService } from 'src/app/Services/Authguard/authguard-service.service';
 import { UserService } from 'src/app/Services/user/user.service';
 
 @Component({
@@ -9,21 +9,21 @@ import { UserService } from 'src/app/Services/user/user.service';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit{
-  mobileQuery: MediaQueryList;
   Doctors:any;
-  private _mobileQueryListener: () => void;
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher,private userService:UserService){
-    this.mobileQuery = media.matchMedia('(max-width: 600px)');
-    this._mobileQueryListener = () => changeDetectorRef.detectChanges();
-    this.mobileQuery.addListener(this._mobileQueryListener);
-  }
-  ngOnDestroy():void{
-    this.mobileQuery.removeListener(this._mobileQueryListener);
-  }
+ 
+  constructor( private userService:UserService,private router:Router,private authservice:AuthguardServiceService){}
+    
   ngOnInit(){
    this.userService.getdoctorsList().subscribe((res:any)=>{
     console.log(res,'res')
     this.Doctors=res;
    })
   }
+
+  logout(){
+    console.log("logged out")
+    this.authservice.logout();
+    this.router.navigateByUrl('login');
+  }
+
 }
