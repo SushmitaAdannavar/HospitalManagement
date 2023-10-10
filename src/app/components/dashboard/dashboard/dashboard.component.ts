@@ -28,7 +28,6 @@ export class DashboardComponent implements OnInit{
 
   search(e:any){
     this.searchval=e.target.value;
-    console.log(this.searchval)
     this.userService.changeMessage(this.searchval)
   }
 }

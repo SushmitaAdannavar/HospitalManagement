@@ -49,4 +49,104 @@
     top:76px;left:5px;
 }
 
+@media only screen and (max-width: 412px) {
 
+    .maindiv {
+
+        position: relative;
+        top: 170px;
+        left: 50px;
+        width: 400px;
+    }
+    .signup {
+        font-size: 35px;
+        font: Arial;
+        font-weight: 500;
+    }
+    .state{
+        font-size: 20px;margin-top: 10px;margin-bottom: 60px;
+    }
+    .slidetoggle{
+        position: relative;
+        top:30px;left:8px;margin-bottom: 50px;
+    }
+    .formfieldsdiv {
+        border-radius: 20px;
+        position: relative;margin-top: 24px;
+        top: 10px;opacity: 1000;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+        
+        width: 350px;
+        overflow: hidden;
+        height: 65px;
+    }
+    
+    .formfields {
+        width: 360px;
+        position: relative;
+        top: 0px;height: 95px;
+    }
+    .passwordforget{
+        color: blue;position: relative;top:86px;left:5px;
+    }
+    
+}
+
+@media only screen and (max-width: 820px) and (min-width:415px) {
+    .maindiv {
+
+        position: relative;
+        top: 170px;
+        left: 100px;
+        width: 620px;
+    }
+    .signup {
+        font-size: 45px;
+        font: Arial;
+        font-weight: 500;
+    }
+    .state{
+        font-size: 26px;margin-top: 25px;margin-bottom: 60px;
+    }
+    .slidetoggle{
+        position: relative;font-size: 30px;
+        top:37px;left:8px;margin-bottom: 50px;
+    }
+    .formfieldsdiv {
+        border-radius: 20px;
+        position: relative;margin-top: 24px;
+        top: 10px;opacity: 1000;
+        box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+        
+        width: 620px;
+        overflow: hidden;
+       height: 85px;
+    }
+    
+    .formfields {
+        width: 630px;
+        position: relative;
+        top: -6px;height: 116px;
+    }
+    .placeholder{
+        font-size: x-large;margin-top: 17px;height: 60px;
+    }
+    .button{
+        position: relative;
+        top:50px;left:8px;height: 53px;
+        width: 160px;opacity: 1.33;
+        
+    }
+    .buttondiv{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;gap:10px;font-size: x-large;
+    }
+    .passwordforget{
+        color: blue;position: relative;top:86px;left:5px;font-size: larger;
+    }
+    .account{
+        font-size: larger;
+    }
+    
+}

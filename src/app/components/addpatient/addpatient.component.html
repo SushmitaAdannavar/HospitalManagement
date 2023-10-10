@@ -1,5 +1,5 @@
 <div [formGroup]="patientForm" class="maindiv" >
-    <h1>Add Patient</h1>
+    <h1 class="header">Add Patient</h1>
     <input #fileInput placeholder="Select image" type="file" (change)="onfileSelect($event)" style="display: none;">
     <button mat-raised-button color="primary" (click)="fileInput.click()">Select image</button>
     <div class="formfieldsdiv">
@@ -38,8 +38,8 @@
         </mat-form-field>
     </div>
     <div class="buttondiv">
-        <button mat-raised-button color="warn" (click)="cancel()">Cancel</button>
+        <button mat-raised-button color="warn" (click)="cancel()" class="cancel">Cancel</button>
         <button *ngIf="!edit" mat-raised-button color="primary" (click)="addpatient()" style="width: 200px;">Add Patient</button>
-        <button *ngIf="edit" mat-raised-button color="primary" (click)="editpatient()" style="width: 200px;">Edit Patient</button>
+        <button *ngIf="edit" mat-raised-button color="primary" class="editclass" (click)="editpatient()" style="width: 200px;">Edit Patient</button>
     </div>
 </div>

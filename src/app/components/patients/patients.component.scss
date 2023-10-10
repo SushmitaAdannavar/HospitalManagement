@@ -105,3 +105,21 @@ background-color: rgba(242, 242, 242, 0.937);height: 55px;
 .buttonflex{
   display: flex;justify-content: space-around;flex-wrap: wrap;align-items: center;
 }
+
+@media only screen and (max-width: 412px) {
+
+  .maindoc{
+    position: fixed;overflow-x: auto;
+    top:165px;left: 5px;right: 5px;width: auto;
+    
+}
+.header{
+  position: fixed;width: 390px;
+  display: flex;justify-content: space-between;align-items: center;
+}
+.dochead {margin-right: 30px;
+  font-size: xx-large;
+  color: gray;
+}
+}
+
