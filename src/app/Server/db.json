@@ -5,49 +5,63 @@
       "name": "Dr.Sophie",
       "img": "Doctorimg1.png",
       "specialization": "Gynaecologist",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Experienced and passionate gynecologist with 15 years of experience in the medical field. She is committed to providing the highest quality of care to her patients in a compassionate and understanding manner. She is knowledgeable in the latest gynecology treatments and technologies and is continually expanding her knowledge base for the benefit of her patients.",
+      "experience":"ABC Hospital, Anytown, CA: Gynecologist | June 2005 - Present"
     },
     {
       "id": 2,
       "name": "Dr.Liam",
       "img": "Doctorimg2.png",
       "specialization": "Dentist",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Dedicated dentist with 7+ years of experience.Passionate about educating patients on importance of oral hygiene. Committed to providing the best patient care through communication and high-quality service. Experience in working with children, adolescents, and adults, as well as those who suffer from dental anxiety",
+      "experience":"West Coast Dental Services - Los Angeles, CA"
     },
     {
       "id": 3,
       "name": "Dr.Noah",
       "img": "Doctorimg3.png",
       "specialization": "Nursing",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Registered nurse with strong experience in delivering quality care to patients. Professional with more than eight years of practice in emergency room care, triage and post-surgical recovery",
+      "experience":"HCA Florida kendall Hospital,Miami"
     },
     {
       "id": 4,
       "name": "Dr.Jess",
       "img": "Doctorimg4.png",
       "specialization": "Cardiologist",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Responsible for providing general cardiology consultative services for the health facilities diverse patients. Recommend invasive procedures when needed and consult with senior cardiologists at different facilities when more complex treatment options are needed.",
+      "experience":"Jackson Memorial Hospital,Miami"
     },
     {
       "id": 5,
       "name": "Dr.John",
       "img": "Doctorimg5.png",
       "specialization": "Orthopedic",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Highly qualified orthopedic surgeon with 10 years of experience in the industry and training from one of the top medical colleges in the country. Updated on the latest techniques and technologies in the field.",
+      "experience":"Mritan Hospital - Los Angeles"
     },
     {
       "id": 6,
       "name": "Dr.Prathik",
       "img": "Doctorimg6.png",
       "specialization": "Dermatologist",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Highly experienced and board certified Dermatologist who has been practicing for over 10 years. She is dedicated to providing the highest quality of medical care to her patients and is passionate about helping them achieve their skin care goals. Dr. Doe has extensive knowledge of the latest dermatology treatments and technology and is committed to continuing her education to stay up to date with the latest advances in the field",
+      "experience":"Dermatologist, Anytown Skin Care Clinic, Anytown, USA"
     },
     {
       "id": 7,
       "name": "Dr.Jane",
       "img": "Doctor7.png",
       "specialization": "Pediatrician",
-      "address": "795 Folson Ave 600 San Franscisco,CADGE"
+      "address": "795 Folson Ave 600 San Franscisco,CADGE",
+      "about":"Assist in over 500 successful births and provided post-partum counseling for struggling families to increase the happiness and health of newborns and mothers. ",
+      "experience":"Capital Region Medical Center - Jefferson City, MO"
     }
   ],
   "Appointments": [

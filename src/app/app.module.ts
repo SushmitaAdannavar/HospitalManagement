@@ -30,6 +30,7 @@ import { AddpatientComponent } from './components/addpatient/addpatient.componen
 import { FormsModule } from '@angular/forms';
 import { AuthguardServiceService } from './Services/Authguard/authguard-service.service';
 import { AuthenticationGuard } from './Guard/authenticationguard.guard';
+import { DoctorprofileComponent } from './components/doctorprofile/doctorprofile.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { AuthenticationGuard } from './Guard/authenticationguard.guard';
     SearchfilterPipe,
     DoctorsComponent,
     PatientsComponent,
-    AddpatientComponent
+    AddpatientComponent,
+    DoctorprofileComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,MatIconModule,ReactiveFormsModule,MatTableModule,MatListModule,FormsModule,

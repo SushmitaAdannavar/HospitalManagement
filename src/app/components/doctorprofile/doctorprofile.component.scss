@@ -1,0 +1,67 @@
+.maindiv {
+
+    position: relative;
+    top: 20px;
+    left: 20px;right: 20px;
+    width: 660px;
+}
+.maindoc {
+    position: relative;width:auto;
+    align-items: center;
+
+}
+.doclists {
+    border: 1px;width: 660px;
+
+    overflow: hidden;
+    display: flex;justify-content: space-between;
+    flex-direction: row;
+}
+
+.imgdiv {
+    margin: 0;width: 350px;
+    padding: 0;height: 260px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
+
+    overflow: hidden;
+    
+}
+
+.img {
+    height: 270px;
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    object-fit: fill;
+}
+
+.contentdiv {
+    height: 300px;margin-top: 28px;
+    text-align: center;width: 296px;
+
+}
+
+.docname {
+    font-size: 34px;
+}
+
+.icons {
+    margin-top: 20px;margin-right: 5px;
+    height: 25px;
+    width: 28px;
+}
+
+.about{
+    color: gray;font-size:x-large;margin-top: -30px; 
+}
+.about1{
+    color: gray;font-size:x-large;margin-top: 20px;
+}
+.secondpart{
+    margin-top: -40px;
+}
+.ul{
+    margin-left: -20px;text-align: justify;margin-top: -8px;
+}
