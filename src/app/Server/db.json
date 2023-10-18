@@ -153,6 +153,12 @@
       "email": "sakshi@gmail.com",
       "password": "123qwe/*",
       "id": 1
+    },
+    {
+      "name": "sakshi",
+      "email": "sakshi1234@gmail.com",
+      "password": "123qwe12",
+      "id": 2
     }
   ]
 }

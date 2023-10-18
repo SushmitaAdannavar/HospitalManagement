@@ -29,7 +29,7 @@ import { PatientsComponent } from './components/patients/patients.component';
 import { AddpatientComponent } from './components/addpatient/addpatient.component';
 import { FormsModule } from '@angular/forms';
 import { AuthguardServiceService } from './Services/Authguard/authguard-service.service';
-import { AuthenticationGuard } from './authentication.guard';
+import { AuthenticationGuard } from './Guard/authenticationguard.guard';
 
 @NgModule({
   declarations: [

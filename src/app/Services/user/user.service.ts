@@ -17,12 +17,15 @@ export class UserService {
   {
   return this.http.PostService('Appointments',reqdata);
   }
+
   getappointment(){
     return this.http.GetService('Appointments');
   }
+
   editappointment(reqdata:any,id:any){
     return this.http.PutService('Appointments/'+id,reqdata)
   }
+
   deleteappointment(id:any){
     return this.http.DeleteService('Appointments/'+id)
   }
@@ -31,6 +34,7 @@ export class UserService {
   {
   return this.http.PostService('Patients',reqdata);
   }
+  
   getpatientsList(){
     return this.http.GetService('Patients');
   }

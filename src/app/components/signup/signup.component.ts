@@ -10,7 +10,8 @@ import { SigninService } from 'src/app/Services/signin.service';
 })
 export class SignupComponent {
 
-  signupform!:FormGroup
+  signupform!:FormGroup;
+  submitted=false;
 
   constructor(private formBuilder:FormBuilder,private signin:SigninService,private router:Router){
 
@@ -18,13 +19,17 @@ export class SignupComponent {
 
   ngOnInit(){
     this.signupform=this.formBuilder.group({
-      "name":['',Validators.required],
+      "name":['',Validators.required,Validators.pattern("")],
       "email":['',[Validators.required,Validators.email]],
       "password":['',[Validators.required,Validators.minLength(6)]]
     })
   }
 
   register(){
+    this.submitted = true;
+        if (this.signupform.invalid) {
+            return;
+        }
     let reqdata={
       "name":this.signupform.value.name,
       "email":this.signupform.value.email,

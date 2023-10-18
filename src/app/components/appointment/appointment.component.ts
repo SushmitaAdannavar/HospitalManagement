@@ -49,6 +49,12 @@ export class AppointmentComponent {
   }
 
   addappointment() {
+
+    this.submitted = true;
+
+        if (this.appointmentForm.invalid) {
+            return;
+        }
     let reqdata = {
       "img":this.profileimage,
       "name": this.appointmentForm.value.name,

@@ -7,8 +7,7 @@ import { AppointmentComponent } from './components/appointment/appointment.compo
 import { AllAppointmentsComponent } from './components/all-appointments/all-appointments.component';
 import { DoctorsComponent } from './components/doctors/doctors.component';
 import { PatientsComponent } from './components/patients/patients.component';
-import { AuthenticationGuard } from './authentication.guard';
-
+import { AuthenticationGuard } from './Guard/authenticationguard.guard';
 const routes: Routes = [
   {path:'',redirectTo:"/login",pathMatch:'full'},
   { path: 'signup', component: SignupComponent },

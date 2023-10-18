@@ -11,7 +11,7 @@ import { SigninService } from 'src/app/Services/signin.service';
 export class LoginComponent {
 
   loginForm!:FormGroup;usercheck:any;email!:string;password!:string;
-  user='1';
+  user='1';submitted=false;
 public tokenName:string='token'
   constructor(private formBuilder:FormBuilder,private signin:SigninService,private router:Router){
 
@@ -19,13 +19,17 @@ public tokenName:string='token'
 
   ngOnInit(){
     this.loginForm=this.formBuilder.group({
-      "email":['',Validators.required],
-      "password":['',Validators.required]
+      "email":['',[Validators.required,Validators.email]],
+      "password":['',[Validators.required,Validators.minLength(6)]]
     })
     
   }
 
   login(){
+    this.submitted = true;
+        if (this.loginForm.invalid) {
+            return;
+        }
     this.email=this.loginForm.value.email;
     this.password=this.loginForm.value.password;
     this.signin.loginService().subscribe((val:any)=>{
@@ -46,4 +50,6 @@ public tokenName:string='token'
 
     })
   }
+
+  
 }

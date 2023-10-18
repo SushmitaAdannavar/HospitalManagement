@@ -17,7 +17,7 @@
         <mat-slide-toggle color="primary" >Remember me</mat-slide-toggle>
     </div>
     <div>
-        <button mat-raised-button color="primary" class="button" (click)="login()">
+        <button mat-raised-button color="primary" class="button" (click)="login()" [disabled]="!loginForm.valid">
             <div class="buttondiv">
                 <div style="font-size: x-large;width: 20px;" >+ </div>
                 <div >Login</div>

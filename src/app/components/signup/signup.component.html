@@ -23,7 +23,7 @@
         <mat-slide-toggle color="primary">I agree to the terms and Privacy.</mat-slide-toggle>
     </div>
     <div>
-        <button mat-raised-button color="primary" class="button" (click)="register()">
+        <button mat-raised-button color="primary" class="button" [disabled]="!signupform.valid" (click)="register()">
             <div class="buttondiv">
                 <div style="font-size: x-large;width: 20px;">+ </div>
                 <div >Register</div>

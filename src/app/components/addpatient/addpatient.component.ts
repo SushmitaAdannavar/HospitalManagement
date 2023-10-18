@@ -14,7 +14,7 @@ import { PatientsComponent } from '../patients/patients.component';
 export class AddpatientComponent {
 
   patientForm!:FormGroup;
-
+submitted=false;
   edit=false;
   profileimage!:string;
   name!: string;ID!: string;age!: string;address!: string;number!: string;lastvisit!: string;status!: string;id!: string;
@@ -49,6 +49,12 @@ export class AddpatientComponent {
   }
 
   addpatient() {
+    this.submitted = true;
+
+        
+        if (this.patientForm.invalid) {
+            return;
+        }
     let reqdata = {
       "img":this.profileimage,
       "name": this.patientForm.value.name,

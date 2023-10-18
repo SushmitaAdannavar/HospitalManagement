@@ -13,7 +13,6 @@ export class AuthguardServiceService {
     } 
 
     logout(){
-      console.log("remove item")
       localStorage.removeItem(this.tokenName)
     }
 }
