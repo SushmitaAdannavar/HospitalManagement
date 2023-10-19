@@ -87,11 +87,15 @@
 }
 
 @media only screen and (max-width: 412px) {
+    .dochead{
+        position: fixed;
 
+      }
     .maindoc {
-        position: relative;
+        position: fixed;
         width: 400px;
-        top: 5px;
+        top: 145px;height:auto;
+        overflow-y: auto;
         bottom: 20px;
         left: 3px;
         padding-bottom: 25px;
