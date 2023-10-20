@@ -171,3 +171,43 @@
         margin-top: 20px;
     }
 }
+
+@media only screen and (max-width: 820px) and (min-width:413px) {
+
+    .maindiv {
+
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        max-width: 610px;
+    }
+    .contentdiv {
+        height: 300px;
+        margin-top: 28px;
+        text-align: center;
+        width: 310px;
+    }
+    .about {
+        color: gray;
+        font-size: xx-large;
+       margin-top: 8px;
+        text-align: justify;
+    }
+    .about1 {
+        color: gray;
+        font-size: xx-large;
+        margin-top: 20px;
+    }
+    .aboutcontent{
+        font-size: 21px;
+    }
+    .address {
+        color: gray;
+        margin-top: 7px;
+        font-size: large;
+    }
+    .ul{
+        font-size: 21px;
+    }
+}

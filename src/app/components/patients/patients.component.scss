@@ -99,11 +99,30 @@ background-color: rgba(242, 242, 242, 0.937);height: 55px;
 .head3{
   width: 110px;
 }
+.head4{
+  width: 250px;
+}
+.head5{
+  width: 200px;
+}
 .button{
-  height: 45px;font-size: medium;
+  height: 29px;font-size: 14px;
 }
 .buttonflex{
   display: flex;justify-content: space-around;flex-wrap: wrap;align-items: center;
+}
+.img{
+  height:45px; width:45px;
+  border:1px groove;border-radius: 50%;
+ }
+ .editbutton{
+  border-radius: 50%;height: 40px;width: 40px;background-color: rgb(51,108,251);margin-top: 6px;margin-left: 20px;color: white;
+ }
+ .deletebutton{
+  border-radius: 70%;height: 40px;width: 40px;background-color: rgb(237,79,95);margin-top: 6px;margin-left: -80px;
+ }
+.editicon{
+  margin-top: 6px;
 }
 
 @media only screen and (max-width: 412px) {
@@ -120,6 +139,59 @@ background-color: rgba(242, 242, 242, 0.937);height: 55px;
 .dochead {margin-right: 30px;
   font-size: xx-large;
   color: gray;
+}
+}
+
+@media only screen and (max-width:820px) and (min-width:413px){
+
+  .maindoc{
+     position: fixed;
+     top:240px;left: 5px;right: 5px;width: auto;
+     overflow-x: auto;
+ }
+ .header{
+   position: fixed;width: 800px;
+   display: flex;justify-content: space-between;align-items: center;
+ }
+ .dochead {
+   position: relative;top: 40px;font-size: 44px;
+}
+.adddoc{
+ position: relative;top: 44px;font-size: 34px;
+}
+.addbutton{
+ height: 50px;font-size: 24px;
+}
+.head1{
+ width: 100px;font-size: 22px;height: 70px;
+}
+.head2{
+ width: 160px;font-size: 22px;height: 70px;
+}
+.head3{
+ width: 137px;font-size: 22px;height: 70px;
+}
+.head4{
+  font-size: 22px;height: 70px;
+}
+.head5{
+  font-size: 22px;height: 70px;
+}
+.img{
+ height:45px; width:45px;
+ border:1px groove;border-radius: 50%;
+}
+.button{
+  height: 47px;font-size: 23px;
+}
+.editbutton{
+  height: 47px;width: 47px;margin-top: 9px;
+}
+.deletebutton{
+  height: 47px;width: 47px;margin-top: 9px;
+}
+.editicon{
+  margin-top: 7px;height: 32px;width: 32px;
 }
 }
 

@@ -72,6 +72,10 @@ background-color: rgba(242, 242, 242, 0.937);height: 55px;
   .buttonflex{
     display: flex;justify-content: space-around;flex-wrap: wrap;align-items: center;
   }
+  .img{
+    height:33px; width:33px;
+    border:1px groove;border-radius: 50%;
+  }
 
   @media only screen and (max-width: 412px) {
 
@@ -94,16 +98,35 @@ background-color: rgba(242, 242, 242, 0.937);height: 55px;
 
    .maindoc{
       position: fixed;
-      top:165px;left: 5px;right: 5px;width: auto;
+      top:240px;left: 5px;right: 5px;width: auto;
       overflow-x: auto;
   }
   .header{
-    position: fixed;
+    position: fixed;width: 800px;
     display: flex;justify-content: space-between;align-items: center;
   }
-  .dochead {margin-right: 430px;
-    font-size: xx-large;
-    color: gray;
+  .dochead {
+    position: relative;top: 40px;font-size: 44px;
+
+}
+.adddoc{
+  position: relative;top: 44px;font-size: 34px;
+}
+.addbutton{
+  height: 50px;font-size: 24px;
+}
+.head1{
+  width: 95px;font-size: 22px;height: 65px;
+}
+.head2{
+  width: 155px;font-size: 22px;height: 65px;
+}
+.head3{
+  width: 132px;font-size: 22px;height: 65px;
+}
+.img{
+  height:45px; width:45px;
+  border:1px groove;border-radius: 50%;
 }
 
 }

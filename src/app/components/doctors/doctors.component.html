@@ -9,12 +9,12 @@
         </div>
         <div class="contentdiv">
             <h3 class="docname">{{list.name}}</h3>
-            <p style="color: gray;margin-top: -5px;">{{list.specialization}}</p>
+            <p class="specialization">{{list.specialization}}</p>
             <img src="../../../../assets/1161953_instagram_icon.svg" class="icons">
             <img src="../../../../assets/facebook-f.svg" class="icons" >
             <img src="../../../../assets/twitter.svg" class="icons">
-            <p style="color: gray;margin-top: 10px;">{{list.address}}</p>
-            <button mat-raised-button color="primary" (click)="viewProfile(list)">View Profile</button>
+            <p class="address">{{list.address}}</p>
+            <button mat-raised-button color="primary" (click)="viewProfile(list)" class="viewProfile">View Profile</button>
         </div>
     </div>
 </div>

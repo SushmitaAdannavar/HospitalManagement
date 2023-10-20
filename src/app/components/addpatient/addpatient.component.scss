@@ -36,6 +36,9 @@
 .buttondiv{
     display: flex;width: 480px;position: relative;top: 25px;justify-content: space-between;
 }
+.addoredit{
+    width: 200px;
+}
 
 @media only screen and (max-width: 412px) {
 
@@ -80,3 +83,18 @@
     }
   
   }
+
+  @media only screen and (max-width:820px) and (min-width:413px){
+    .header{
+        margin-bottom: 30px;font-size: 34px;
+    }
+    .selectimagebutton{
+        height: 46px;font-size: larger;
+    }
+    .cancel{
+        height: 40px;font-size: larger;
+    }
+    .addoredit{
+        height: 40px;font-size: larger;
+    }
+}

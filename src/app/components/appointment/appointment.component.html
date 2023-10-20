@@ -1,7 +1,8 @@
 <div [formGroup]="appointmentForm" class="maindiv" >
-    <h1>Add appointment</h1>
+    <h1 *ngIf="!edit" class="header">Add appointment</h1>
+    <h1 *ngIf="edit" class="header">Edit appointment</h1>
         <input #fileInput placeholder="Select image" type="file" (change)="onfileSelect($event)" style="display: none;">
-    <button mat-raised-button color="primary" (click)="fileInput.click()">Select image</button>
+    <button mat-raised-button color="primary" (click)="fileInput.click()" class="selectimagebutton">Select image</button>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
             <input matInput placeholder="Name" formControlName="name" >
@@ -46,7 +47,7 @@
     </div>
     <div class="buttondiv">
         <button mat-raised-button color="warn" (click)="cancel()" class="cancel">Cancel</button>
-        <button *ngIf="!edit" mat-raised-button color="primary" [disabled]="!appointmentForm.valid" (click)="addappointment()" style="width: 200px;" >Add appointment</button>
-        <button *ngIf="edit" mat-raised-button color="primary" (click)="editappointment()" class="editclass">Edit appointment</button>
+        <button *ngIf="!edit" mat-raised-button color="primary" [disabled]="!appointmentForm.valid" (click)="addappointment()" class="addoredit" >Add appointment</button>
+        <button *ngIf="edit" mat-raised-button color="primary" (click)="editappointment()" class="addoredit editclass">Edit appointment</button>
     </div>
 </div>

@@ -10,46 +10,47 @@ import { SigninService } from 'src/app/Services/signin.service';
 })
 export class LoginComponent {
 
-  loginForm!:FormGroup;usercheck:any;email!:string;password!:string;
-  user='1';submitted=false;
-public tokenName:string='token'
-  constructor(private formBuilder:FormBuilder,private signin:SigninService,private router:Router){
+  loginForm!: FormGroup; usercheck: any; email!: string; password!: string;
+  user = '1'; submitted = false;showerror=false;
+  public tokenName: string = 'token'
+  constructor(private formBuilder: FormBuilder, private signin: SigninService, private router: Router) {
 
   }
 
-  ngOnInit(){
-    this.loginForm=this.formBuilder.group({
-      "email":['',[Validators.required,Validators.email]],
-      "password":['',[Validators.required,Validators.minLength(6)]]
+  ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      "email": ['', [Validators.required, Validators.email]],
+      "password": ['', [Validators.required, Validators.minLength(6)]]
     })
-    
+
   }
 
-  login(){
+  login() {
     this.submitted = true;
-        if (this.loginForm.invalid) {
-            return;
-        }
-    this.email=this.loginForm.value.email;
-    this.password=this.loginForm.value.password;
-    this.signin.loginService().subscribe((val:any)=>{
+    if (this.loginForm.invalid) {
+      this.showerror=true;
+      return;
+    }
+    this.email = this.loginForm.value.email;
+    this.password = this.loginForm.value.password;
+    this.signin.loginService().subscribe((val: any) => {
       console.log(val);
-     this.usercheck=val.filter((item:any)=>{
-      console.log("logged")
-      console.log(item.email,this.email);console.log(item.password)
-       return this.email==item.email && this.password==item.password
-     })
-     
-     console.log(this.usercheck)
-     if(this.usercheck.length==1){
-      console.log("successfull");
-      localStorage.setItem(this.tokenName,this.user)
-      this.router.navigate(['/dashboard/doctors']);
-      
-     }
+      this.usercheck = val.filter((item: any) => {
+        console.log("logged")
+        console.log(item.email, this.email); console.log(item.password)
+        return this.email == item.email && this.password == item.password
+      })
+
+      console.log(this.usercheck)
+      if (this.usercheck.length == 1) {
+        console.log("successfull");
+        localStorage.setItem(this.tokenName, this.user)
+        this.router.navigate(['/dashboard/doctors']);
+
+      }
 
     })
   }
 
-  
+
 }

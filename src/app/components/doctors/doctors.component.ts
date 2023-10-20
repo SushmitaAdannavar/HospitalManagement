@@ -31,9 +31,7 @@ export class DoctorsComponent implements OnInit{
       data:list
     });
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      this.ngOnInit();
-     
+      console.log('The dialog was closed');     
     });
   }
 }

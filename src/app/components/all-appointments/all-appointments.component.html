@@ -3,7 +3,7 @@
         <div class="dochead">
             Appointments
         </div>
-        <div><button mat-raised-button color="primary" (click)="addappointment()">+ Add appointment</button></div>
+        <div class="adddoc"><button mat-raised-button color="primary" (click)="addappointment()" class="addbutton">+ Add appointment</button></div>
     </div>
     <div class="maindoc">
         <table class="tableentry">
@@ -20,7 +20,7 @@
             </tr>
 
             <tr class="tableheader tableheader1" *ngFor="let list of appointments | searchfilter:search">
-                <th class="head1"><img src="../../../../assets/{{list.img}}" height="33px" width="33px" style="border:1px groove;border-radius: 50%;"></th>
+                <th class="head1"><img src="../../../../assets/{{list.img}}" class="img"></th>
                 <th class="head1">{{list.name}}</th>
                 <th class="head2" style="color: blue;font-weight: 300;"> {{list.email}} </th>
                 <th class="head3" style="color: grey;font-weight: 300;">{{list.date}}</th>

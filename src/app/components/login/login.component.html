@@ -4,19 +4,21 @@
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
             <input matInput placeholder="Email Address" formControlName="email" class="placeholder">
+            <mat-error>Invalid email</mat-error>
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields" >
             <input matInput placeholder="Password" formControlName="password" class="placeholder">
-            <mat-error class="errors">Enter password</mat-error>
+            <mat-error >Enter password</mat-error>
         </mat-form-field>
     </div>
     <div class="slidetoggle">
         <mat-slide-toggle color="primary" ><span class="remember">Remember me</span></mat-slide-toggle>
     </div>
+   
     <div>
-        <button mat-raised-button color="primary" class="button" (click)="login()" [disabled]="!loginForm.valid">
+        <button mat-raised-button color="primary" class="button" (click)="login()" >
             <div class="buttondiv">
                 <div style="font-size: x-large;width: 20px;" >+ </div>
                 <div class="login">Login</div>

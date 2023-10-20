@@ -3,27 +3,27 @@
     <p class="state">Create you account</p>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Name" formControlName="name">
+            <input matInput placeholder="Name" formControlName="name" class="placeholder">
             <mat-error>Enter name</mat-error>
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields">
-            <input matInput placeholder="Email Address" formControlName="email">
+            <input matInput placeholder="Email Address" formControlName="email" class="placeholder">
             <mat-error>Invalid email</mat-error>
         </mat-form-field>
     </div>
     <div class="formfieldsdiv">
         <mat-form-field appearance="fill" class="formfields" >
+            <input matInput placeholder="Password" formControlName="password" class="placeholder">
             <mat-error>Password must be atleast 6 characters</mat-error>
-            <input matInput placeholder="Password" formControlName="password">
         </mat-form-field>
     </div>
     <div class="slidetoggle">
         <mat-slide-toggle color="primary"><span class="remember">I agree to the terms and Privacy.</span></mat-slide-toggle>
     </div>
     <div>
-        <button mat-raised-button color="primary" class="button" [disabled]="!signupform.valid" (click)="register()">
+        <button mat-raised-button color="primary" class="button" (click)="register()">
             <div class="buttondiv">
                 <div style="font-size: x-large;width: 20px;">+ </div>
                 <div class="register">Register</div>

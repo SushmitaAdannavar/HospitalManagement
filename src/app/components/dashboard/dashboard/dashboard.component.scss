@@ -36,7 +36,7 @@
 .profileimg {
   background: 0% 0% padding-box;
   position: relative;
-  left: 3px;
+  left: 3px;height: 40px;width: 40px;
   border-radius: 50%;
 }
 
@@ -55,63 +55,63 @@
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
 }
 
-.example-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-}
+// .example-container {
+//   display: flex;
+//   flex-direction: column;
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-color: white;
+// }
 
-.example-is-mobile .example-toolbar {
-  position: fixed;
+// .example-is-mobile .example-toolbar {
+//   position: fixed;
   
-  z-index: 2;
-}
+//   z-index: 2;
+// }
 
-h1.example-app-name {
-  margin-left: 8px;
-  margin-top: 9px;
-}
+// h1.example-app-name {
+//   margin-left: 8px;
+//   margin-top: 9px;
+// }
 
-.example-sidenav-container {
+// .example-sidenav-container {
   
-  flex: 1;
-}
+//   flex: 1;
+// }
 
-.example-is-mobile .example-sidenav-container {
-  flex: 1 0 auto;
-}
+// .example-is-mobile .example-sidenav-container {
+//   flex: 1 0 auto;
+// }
 
-.example-toolbar {
-  background-color: white;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-}
+// .example-toolbar {
+//   background-color: white;
+//   display: flex;
+//   position: relative;
+//   justify-content: space-between;
+// }
 
-.sidebar {
-  height: 45px;
-  margin-left: 0px;
-  border: 1px groove white;
-  border-radius: 10px;
-  width: 280px;
-}
+// .sidebar {
+//   height: 45px;
+//   margin-left: 0px;
+//   border: 1px groove white;
+//   border-radius: 10px;
+//   width: 280px;
+// }
 
-.sidebar1 {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: row;
-}
+// .sidebar1 {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   flex-direction: row;
+// }
 
-.active {
-  background-color: #feefc3;
-}
+// .active {
+//   background-color: #feefc3;
+// }
 
 @media only screen and (max-width: 412px) {
 
@@ -169,7 +169,18 @@ h1.example-app-name {
 @media only screen and (max-width:820px) and (min-width:413px) {
 
   .searchdiv {
-    width: 390px;
+    width: 420px;
+    height: 70px;
+    position: fixed;
+    overflow: hidden;
+  }
+  .search {
+    width: 421px;height:120px;
+    border-radius: 10px;
+    z-index: 1;font-size: x-large;
+    margin-left: -2px;
+    margin-top: 2px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302), 0 2px 6px 2px rgba(60, 64, 67, 0.149);
   }
 
 
@@ -183,19 +194,31 @@ h1.example-app-name {
   .notification {
     position: fixed;
     top: 20px;
-    left: 668px;
+    left: 658px;font-size: 40px;
   }
 
   .profileimg {
     background: 0% 0% padding-box;
     position: fixed;
-    left: 723px;
+    left: 710px;height: 54px; width: 54px;
     border-radius: 50%;
   }
 
   .arrowdown {
     position: fixed;
-    top: 23px;
-    left: 774px;
+    top: 22px;
+    left: 770px;height: 40px;width: 40px;
+  }
+
+  .matmenu1{
+    height: 29px;font-size: large;
+  }
+
+  .matmenu2{
+    width: 60px;
+  }
+
+  .menubutton{
+    width: 120px;font-size: large;
   }
 }
